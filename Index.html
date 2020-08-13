@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        'use strict';
+        
+        let Tc = +prompt("Введите температуру в градусах по Цельсию");
+        let Tf = (9/5) * Tc + 32;
+        alert(Tf + " градусов по Фаренгейту");
+        
+        let name = "Василий";
+        let admin = name;
+        alert(admin);
+        
+        let result1 = 10 + 10 + "10"; 
+        let result2 = 10 + "10" + 10;
+        let result3 = 10 + 10 + +"10";
+        let result4 = 10 / -"";
+        let result5 = 10 / +"2,5";
+        /*
+        1. 10 складываем с 10, а потом склеиваем с 10
+        2. 10 посередине не является числом, поэтому все склеивается.
+        3. + перед последней 10 делает ее числом, поэтому все складывается.
+        4. 10 делим на -0, т.к в кавычках ничего не написано.
+        5. 10 делим на Nan.
+        
+        Задание 4.
+        let mode = "normal"; - да
+        let my_valu3 = 102; - да
+        let 3my_value3 = "102"; - нет
+        let __hello__ = "world"; - да
+        let $$$ = "money"; - да
+        let !0_world = true; - нет
+        */
+    </script>
+</body>
+</html>
